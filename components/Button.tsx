@@ -1,7 +1,7 @@
 const Button = () => {
     return ( 
         <div>
-            Button
+            Buttonone
         </div>
      );
 }
