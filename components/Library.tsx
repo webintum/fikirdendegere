@@ -1,6 +1,6 @@
 "use clint";
-import { FcIdea } from "react-icons/Fc";
-import { AiOutlinePlus } from "react-icons/Ai";
+import { FcIdea } from "react-icons/fc";
+import { AiOutlinePlus } from "react-icons/ai";
 
 const Library = () => {
     const onClick = () => {
