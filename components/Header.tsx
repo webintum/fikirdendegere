@@ -43,7 +43,9 @@ const Header:React.FC<HeaderProps> = ({
             </div>
             <div className="flex justify-between items-center gap-x-4">
                 <>
-                <Button />
+                <div>
+                  <Button />
+                </div>
                 </>
             </div>
         </div>
