@@ -26,7 +26,8 @@ const ListItem: React.FC<ListItemProps> = ({
         onClick={onClick}
         className="
           relative 
-          group 
+          group
+          
           flex 
           items-center 
           rounded-md 

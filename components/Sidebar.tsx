@@ -6,10 +6,11 @@ import { BiSearch } from "react-icons/bi";
 import { BiSolidFactory } from "react-icons/bi";
 import {RiDraftLine } from "react-icons/ri";
 import { FiAlertCircle, FiThumbsUp } from "react-icons/fi";
-
 import Box from "./Box";
 import SidebarItem from "./SidebarItem";
 import Library from "./Library";
+import Image from 'next/image';
+import profilePic from '../public/images/ivlogo.png';
 
 interface SidebarProps {
     children: React.ReactNode;
@@ -66,9 +67,20 @@ const Sidebar: React.FC<SidebarProps> = ({
     ], [pathname]);
 
     return ( 
+        
         <div className="flex h-full">
+
            <div className="hidden md:flex flex-col gap-y-2 bg-black h-full w-[300px] p-2">
+           
             <Box>
+            <Image p-4
+      src={profilePic}
+      alt="Picture of the author"
+      width={500} 
+      height={500} 
+      // blurDataURL="data:..." automatically provided
+      // placeholder="blur" // Optional blur-up while loading
+    />
                 <div className="flex flex-col gap-y-4 px-5 py-4">
                     {routes.map((item) => (
                         <SidebarItem
@@ -78,7 +90,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                 </div>
             </Box>
             <Box className="overflow-y-auto h-full">
-                <Library />
+                <Library  />
                 <div className="flex flex-col gap-y-4 px-5 py-4">
                     {idearoutes.map((item) => (
                         <SidebarItem
